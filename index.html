@@ -121,8 +121,8 @@ const characters=[
  {id:'ky10',name:'아리아',gender:'여성',age:22,status:'명예 귀족',house:'세라피엘',role:'에르바인 정교 차기 성녀',power:'C',powerNote:'치유·퇴마 S급',line:'신분을 가리지 않고 손을 내미는 밝고 다정한 차기 성녀입니다.',groups:['students','church']},
  {id:'ky1',name:'라밀',gender:'여성',age:23,status:'명예 귀족',house:'브란디르',role:'전설의 용사 후손',power:'A',line:'용사 가문의 이름보다 실질적인 권세를 바라는 후손입니다.',groups:['students']},
  {id:'ky5',name:'리제트',gender:'여성',age:22,status:'명예 귀족',house:'아르카디스',role:'마탑 출신 · 전설의 현자 제자',power:'S',line:'모든 것을 수치와 효율로 판단하는 무표정한 마법 천재입니다.',groups:['students','tower']},
- {id:'ky2',name:'루루카',gender:'여성',age:21,status:'마국 왕족',house:'',role:'마국 공주 · 차기 마왕 · 유학생',power:'B',line:'제국의 햇볕 아래서 낮잠을 자려고 유학 온 천진한 공주입니다.',note:'제국 계급 외 · 아카데미 황족 대우',groups:['students']},
- {id:'ky17',name:'키라',gender:'여성',age:24,status:'마국 무계급',house:'',role:'루루카 전속 호위 · 유학생',power:'A',line:'엉뚱한 공주를 지키느라 잔소리가 끊이지 않는 충직한 호위입니다.',note:'제국 계급 외 · 아카데미 귀족 대우',groups:['students']},
+ {id:'ky2',name:'루루카',gender:'여성',age:21,status:'마국 왕족',house:'',role:'마국 공주 · 차기 마왕 · 유학생',power:'B',line:'제국의 햇볕 아래서 낮잠을 자려고 유학 온 천진한 공주입니다.',note:'제국 계급 외 · 아카데미 황족 대우',groups:['students','demon']},
+ {id:'ky17',name:'키라',gender:'여성',age:24,status:'마국 무계급',house:'',role:'루루카 전속 호위 · 유학생',power:'A',line:'엉뚱한 공주를 지키느라 잔소리가 끊이지 않는 충직한 호위입니다.',note:'제국 계급 외 · 아카데미 귀족 대우',groups:['students','demon']},
  {id:'ky9',name:'스벤',gender:'남성',age:24,status:'평민',house:'',role:'부유한 상인의 아들 · 정보상',power:'B',line:'친근한 웃음 뒤에서 모든 거래의 이익을 계산하는 정보상입니다.',groups:['students']},
  {id:'ky14',name:'이네스',gender:'여성',age:23,status:'평민',house:'',role:'우등생',power:'A',line:'뛰어난 실력에도 신분의 벽에 가로막혀 불공정에 분노하는 학생입니다.',groups:['students','front']},
  {id:'ky19',name:'폰터',gender:'남성',age:22,status:'귀족',house:'로덴펠트 자작가',role:'자작가 막내',power:'C',line:'귀족의 위선을 냉소하면서도 약자의 처지를 외면하지 못하는 학생입니다.',groups:['students','front']},
@@ -132,13 +132,14 @@ const characters=[
  {id:'ky12',name:'안나',gender:'여성',age:45,status:'귀족',house:'발렌하르트 공작가',role:'사상·역사학 교수 · 카일의 어머니',power:'C',line:'제국의 계급제를 옹호하며 아들 카일을 끔찍이 아끼는 교수입니다.',groups:['faculty']},
  {id:'ky11',name:'아우렐리우스',gender:'남성',age:55,status:'황족',house:'아르켈리온 황실',role:'에르바인 제국 황제',power:'S',line:'온화한 겉모습 아래 제국의 안정과 황실의 존속을 우선하는 황제입니다.',groups:['royal']},
  {id:'ky4',name:'른스턴',gender:'남성',age:64,status:'평민',house:'',role:'해방전선 수장',power:'B',line:'평등한 세상을 위해서라면 희생도 감수하는 혁명 조직의 수장입니다.',groups:['front']},
- {id:'ky15',name:'카간',gender:'남성',age:50,status:'마국의 마왕',house:'',role:'카르노스 마국 통치자 · 루루카의 아버지',power:'S',line:'위엄을 잃지 않으면서도 딸의 일에는 냉정을 잃는 마왕입니다.',note:'제국 계급 외 · 실력으로 왕권 유지',groups:[]}
+ {id:'ky15',name:'카간',gender:'남성',age:50,status:'마국의 마왕',house:'',role:'카르노스 마국 통치자 · 루루카의 아버지',power:'S',line:'위엄을 잃지 않으면서도 딸의 일에는 냉정을 잃는 마왕입니다.',note:'제국 계급 외 · 실력으로 왕권 유지',groups:['demon']}
 ];
 const factions=[
  {key:'all',name:'전체 캐릭터',desc:'아카데미 안팎에서 만나실 주요 인물 19명입니다.'},
  {key:'students',name:'아카데미 학생',desc:'특권과 차별이 공존하는 교정에서 저마다의 내일을 꿈꿉니다.'},
  {key:'faculty',name:'아카데미 교직원',desc:'서로 다른 신념과 방식으로 학생들을 가르칩니다.'},
  {key:'royal',name:'황실',desc:'제국을 다스리는 황실에서는 황위 계승 경쟁이 이어지고 있습니다.'},
+ {key:'demon',name:'마국',desc:'카르노스 마국의 통치자와 아카데미로 유학 온 인물들입니다.'},
  {key:'church',name:'교단',desc:'에르바인 정교는 인애를 교리로 삼으며, 성녀와 성기사들을 길러냅니다.'},
  {key:'tower',name:'마탑',desc:'전설의 현자가 세운 기관에서 마법의 이치를 탐구해 온 인물들입니다.'},
  {key:'front',name:'해방전선',desc:'세습 계급의 폐지와 평등을 꿈꾸는 수장과 비밀 조직원들입니다.'}
